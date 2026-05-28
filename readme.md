@@ -1,0 +1,8 @@
+# Mario Kart World Manual Randomizer
+
+This is for the super niche usecase where you want to show off let's say a race in MKW
+with random 3-laps since the "random" in MKW does just intermissions.
+
+Shuffles tracks (with a seed) and on click reveals next one.
+
+100% free range code
