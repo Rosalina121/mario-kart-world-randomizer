@@ -1,0 +1,170 @@
+:root,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.rooty {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    aspect-ratio: 1.0;
+    height: 50%;
+    background-color: blue;
+    flex: 1;
+    margin: 1rem;
+}
+
+.tracks {
+    /*background-color: green;*/
+    list-style-type: none;
+    padding: 0;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    font-family: "Arial";
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 2rem;
+}
+
+.tracks li {
+    position: absolute;
+}
+
+/*.tracks li:first-child {
+    top: -20%;
+}*/
+/* 2nd is actually our first */
+/*.tracks li:nth-child(2) {
+    top: 0%;
+}*/
+
+#dummy {
+    margin-top: -20%;
+    opacity: 0;
+    filter: blur(5px);
+    animation-name: move-down, dummy-t1;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+
+#t1 {
+    --top-start: 0%;
+    top: var(--top-start);
+    opacity: 1;
+    filter: blur(0px);
+    animation-name: move-down, t1-t2;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+
+#t2 {
+    --top-start: 20%;
+    top: var(--top-start);
+    scale: 0.875;
+    opacity: 0.9;
+    filter: blur(0.8px);
+    animation-name: move-down, t2-t3;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+
+#t3 {
+    --top-start: 40%;
+    top: var(--top-start);
+    scale: 0.65;
+    opacity: 0.8;
+    filter: blur(1.5px);
+    animation-name: move-down, t3-t4;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+
+#t4 {
+    --top-start: 60%;
+    top: var(--top-start);
+    scale: 0.5;
+    opacity: 0.7;
+    filter: blur(3.2px);
+    animation-name: move-down, t4-t5;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+
+#t5 {
+    --top-start: 80%;
+    top: var(--top-start);
+    scale: 0.35;
+    opacity: 0.6;
+    filter: blur(6px);
+    animation-name: move-down, t5-off;
+    animation-duration: 2s;
+    animation-play-state: paused;
+}
+
+@keyframes move-down {
+    from {
+        top: var(--top-start);
+    }
+
+    to {
+        top: calc(var(--top-start) + 20%);
+    }
+}
+
+@keyframes dummy-t1 {
+    to {
+        opacity: 1;
+        filter: blur(0px);
+        margin-top: 0%;
+    }
+}
+
+@keyframes t1-t2 {
+    to {
+        filter: blur(0.8px);
+        scale: 0.875;
+        opacity: 0.9;
+    }
+}
+
+@keyframes t2-t3 {
+    to {
+        filter: blur(1.5px);
+        scale: 0.65;
+        opacity: 0.8;
+    }
+}
+
+@keyframes t3-t4 {
+    to {
+        filter: blur(3.2px);
+        scale: 0.5;
+        opacity: 0.7;
+    }
+}
+
+@keyframes t4-t5 {
+    to {
+        filter: blur(6px);
+        scale: 0.35;
+        opacity: 0.6;
+    }
+}
+
+@keyframes t5-off{
+    to {
+        opacity: 0;
+    }
+}

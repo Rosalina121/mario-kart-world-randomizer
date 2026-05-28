@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mario Kart World "Randomizer"</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="rooty">
+        <div class="image">Image
+            <button onclick="playAnim()">START</button>
+            <button onclick="pauseAnim()">PAUSE</button>
+        </div>
+        <!--
+            the idea:
+            js sets the dummy as the next track
+            they all animate and move down
+            once they do, js "moves" the track names down by 1 and resets anim
+            seamlessly so you cant notice this
+        -->
+        <ul class="tracks">
+            <li id="dummy">You should Not See This</li>
+            <li id="t1">Salty Salty Speedway</li>
+            <li id="t2">DK Spaceport</li>
+            <li id="t3">Cheep Cheep Falls</li>
+            <li id="t4">Toad's Factory</li>
+            <li id="t5">Whistlestop Summit</li>
+        <ul/>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
