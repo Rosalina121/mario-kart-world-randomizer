@@ -63,6 +63,9 @@ body {
     top: 0%;
 }*/
 
+/* TODO: idk, lepsze animacje? jakieś easeiny z delayem?*/
+/*takie, co nie psują keyframów xdd*/
+
 #dummy {
     margin-top: -20%;
     opacity: 0;
@@ -80,6 +83,7 @@ body {
     animation-name: move-down, t1-t2;
     animation-duration: 2s;
     animation-play-state: paused;
+
 }
 
 #t2 {
@@ -124,6 +128,7 @@ body {
     animation-name: move-down, t5-off;
     animation-duration: 2s;
     animation-play-state: paused;
+    
 }
 
 .hidden {
