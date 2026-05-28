@@ -27,9 +27,10 @@ body {
 .image {
     aspect-ratio: 1.0;
     height: 50%;
-    background-color: blue;
+    /*background-color: blue;*/
     flex: 1;
     margin: 1rem;
+    object-fit: contain;
 }
 
 .tracks {
