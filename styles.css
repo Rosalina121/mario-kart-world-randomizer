@@ -5,6 +5,17 @@ body {
     overflow: hidden;
 }
 
+.admin {
+    position: absolute;
+    background-color: slategray;
+    width: 50vw;
+    height: 50vh;
+    /*center*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .rooty {
     width: 100vw;
     height: 100vh;
@@ -112,6 +123,10 @@ body {
     animation-name: move-down, t5-off;
     animation-duration: 2s;
     animation-play-state: paused;
+}
+
+.hidden {
+    display: none;
 }
 
 @keyframes move-down {

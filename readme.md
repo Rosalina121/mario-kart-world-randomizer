@@ -6,4 +6,6 @@ with random 3-laps since the "random" in MKW does just intermissions.
 
 Shuffles tracks (with a seed) and on click reveals next one.
 
+Input konami code to open admin panel to set seed
+
 100% free range code
